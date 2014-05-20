@@ -1,0 +1,7 @@
+function find_fish_home
+	if test "$XDG_CONFIG_HOME" != ""
+		echo $XDG_CONFIG_HOME
+	else
+		echo "$HOME/.config/fish"
+	end
+end
